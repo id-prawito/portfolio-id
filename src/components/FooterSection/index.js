@@ -12,10 +12,10 @@ import {
     IconImg,
     TextEnd,
     ContentTwo,
-    Sosial,
+    NavLinks,
 } from "./FooterElements";
 
-const Footer = ({ id, content, copyright }) => {
+const Footer = ({ id, textdes, content, copyright }) => {
     const dataContact = content;
     return (
         <>
@@ -24,10 +24,14 @@ const Footer = ({ id, content, copyright }) => {
                     <FooterRow>
                         <ContentOne>
                             <TextWrapper>
-                                <TopLine>Let’s Talk ?</TopLine>
+                                <TopLine>{textdes}</TopLine>
                                 <IconWrap>
                                     {dataContact.map((contact) => (
-                                        <Icon key={contact.id}>
+                                        <Icon
+                                            href={contact.linkTo}
+                                            key={contact.id}
+                                            target="_blank"
+                                        >
                                             <IconImg
                                                 src={contact.imgContact.default}
                                             ></IconImg>
@@ -39,15 +43,50 @@ const Footer = ({ id, content, copyright }) => {
                         </ContentOne>
                         <ContentTwo>
                             <TextWrapper>
-                                <Sosial>Home</Sosial>
-                                <Sosial>Experience</Sosial>
-                                <Sosial>Skillset</Sosial>
-                                <Sosial>Work</Sosial>
+                                <NavLinks
+                                    to="experience"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                >
+                                    Experience
+                                </NavLinks>
+                                <NavLinks
+                                    to="skillset"
+                                    smooth={true}
+                                    duration={700}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                >
+                                    Skillset
+                                </NavLinks>
+                                <NavLinks
+                                    to="porto"
+                                    smooth={true}
+                                    duration={700}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                >
+                                    Porto
+                                </NavLinks>
                             </TextWrapper>
                             <TextWrapper>
-                                <Sosial>About</Sosial>
-                                <Sosial>Book</Sosial>
-                                <Sosial>Feedback</Sosial>
+                                <NavLinks
+                                    to="hero"
+                                    smooth={true}
+                                    duration={700}
+                                    spy={true}
+                                    exact="true"
+                                    offset={-80}
+                                >
+                                    About
+                                </NavLinks>
+                                <NavLinks to="">Book</NavLinks>
+                                <NavLinks to="">Feedback</NavLinks>
                             </TextWrapper>
                         </ContentTwo>
                     </FooterRow>

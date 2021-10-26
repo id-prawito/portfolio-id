@@ -52,7 +52,6 @@ const Navbar = ({ toggle }) => {
                                     spy={true}
                                     exact="true"
                                     offset={-80}
-                                    // activeClass="active"
                                 >
                                     Experience
                                 </NavLinks>

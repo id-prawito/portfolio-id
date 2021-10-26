@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
     color: #fff;
-    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#272429")};
+    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#030303")};
     @media screen and (max-width: 768px) {
         padding: 50px 20px;
         height: 744px;
@@ -10,7 +10,15 @@ export const AboutContainer = styled.div`
 
     @media (min-width: 320px) and (max-width: 480px) {
         padding: 20px 20px;
-        height: 100%;
+        height: 844px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
+    }
+
+    @media (max-width: 320px) {
+        height: 920px;
     }
 `;
 
@@ -25,6 +33,10 @@ export const AboutWrapper = styled.div`
     justify-content: center;
     @media screen and (max-width: 768px) {
         padding: 20px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        height: 100%;
     }
 `;
 
@@ -43,10 +55,20 @@ export const AboutRow = styled.div`
         display: initial;
         height: 100%;
     }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 70px;
+        height: 1070px;
+    }
 `;
 
 export const ContentOne = styled.div`
     grid-area: col1;
+
+    @media (min-width: 1140px) {
+        height: 100%;
+    }
 `;
 
 export const ContentTwo = styled.div`
@@ -60,10 +82,9 @@ export const ContentTwo = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
     padding-top: 0;
     width: 500px;
-    padding-bottom: 60px;
+    margin-top: 50px;
     @media screen and (max-width: 768px) {
         width: 100%;
     }
@@ -73,6 +94,10 @@ export const TextWrapper = styled.div`
 
     @media (min-width: 768px) and (max-width: 890px) {
         min-width: 100%;
+    }
+
+    @media (min-width: 1140px) {
+        margin-top: 70px;
     }
 `;
 
@@ -86,6 +111,10 @@ export const TopLine = styled.div`
         font-size: 30px;
         font-weight: 600;
     }
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
 `;
 
 export const TextDescription = styled.p`
@@ -98,23 +127,19 @@ export const TextDescription = styled.p`
         margin-bottom: 20px;
     }
 
+    @media (min-width: 1140px) {
+        margin-bottom: 50px;
+    }
+
     @media (min-width: 320px) and (max-width: 480px) {
         line-height: 18px;
-    }
-`;
-
-export const TextEnd = styled.p`
-    font-size: 15px;
-    color: #00a4ef;
-    @media (min-width: 320px) and (max-width: 480px) {
-        font-size: 12px;
     }
 `;
 
 export const Isi = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #383837;
+    background-color: #111111;
     border-radius: 0px 30px 30px 30px;
     padding: 40px 32px;
     margin-left: 60px;
@@ -133,7 +158,7 @@ export const Isi = styled.div`
 export const Isi2 = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #383837;
+    background-color: #111111;
     border-radius: 30px 0px 30px 30px;
     padding: 40px 32px;
     text-align: right;

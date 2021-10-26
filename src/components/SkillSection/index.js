@@ -9,7 +9,6 @@ import {
     TextWrapper,
     TopLine,
     TextDescription,
-    TextEnd,
     ContentTwo,
     Isi,
     Icon,
@@ -28,7 +27,6 @@ const Skill = ({ id, judul, keterangan, link, content }) => {
                             <TextWrapper>
                                 <TopLine>{judul}</TopLine>
                                 <TextDescription>{keterangan}</TextDescription>
-                                <TextEnd>{link}</TextEnd>
                             </TextWrapper>
                         </ContentOne>
                         <ContentTwo>

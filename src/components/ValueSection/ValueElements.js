@@ -6,6 +6,10 @@ export const ValueContainer = styled.div`
     @media screen and (max-width: 768px) {
         padding: 50px 20px;
     }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
+    }
 `;
 
 export const ValueWrapper = styled.div`
@@ -22,6 +26,11 @@ export const ValueWrapper = styled.div`
         flex-direction: column;
         padding: 20px;
         height: 100%;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 70px;
     }
 `;
 
@@ -54,10 +63,13 @@ export const ContentTwo = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
 
     @media (min-width: 768px) and (max-width: 890px) {
         max-width: 100%;
+    }
+
+    @media (min-width: 1140px) {
+        margin-bottom: 230px;
     }
 `;
 
@@ -80,15 +92,9 @@ export const TextDescription = styled.p`
         font-size: 14px;
         margin-bottom: 20px;
     }
-`;
 
-export const TextEnd = styled.p`
-    font-size: 15px;
-    margin-bottom: -80px;
-    color: #272429;
-    @media screen and (max-width: 768px) {
-        font-size: 12px;
-        margin-bottom: 20px;
+    @media (min-width: 1140px) {
+        margin-bottom: 50px;
     }
 `;
 

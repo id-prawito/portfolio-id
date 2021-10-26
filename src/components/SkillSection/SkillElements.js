@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export const SkillContainer = styled.div`
     color: #fff;
-    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#272429")};
+    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#030303")};
     @media screen and (max-width: 768px) {
         padding: 20px 20px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
     }
 `;
 
@@ -31,6 +35,11 @@ export const SkillWrapper = styled.div`
     @media (min-width: 768px) and (max-width: 890px) {
         height: 800px;
     }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 70px;
+    }
 `;
 
 export const SkillRow = styled.div`
@@ -52,6 +61,10 @@ export const SkillRow = styled.div`
 
 export const ContentOne = styled.div`
     grid-area: col1;
+
+    @media (min-width: 1140px) {
+        margin-bottom: 300px;
+    }
 `;
 
 export const ContentTwo = styled.div`
@@ -66,10 +79,8 @@ export const ContentTwo = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
     padding-top: 0;
     width: 500px;
-    padding-bottom: 60px;
     @media screen and (max-width: 768px) {
         width: 100%;
     }
@@ -103,13 +114,9 @@ export const TextDescription = styled.p`
     @media (min-width: 320px) and (max-width: 480px) {
         line-height: 20px;
     }
-`;
 
-export const TextEnd = styled.p`
-    font-size: 15px;
-    color: #00a4ef;
-    @media (min-width: 320px) and (max-width: 480px) {
-        font-size: 12px;
+    @media (min-width: 1140px) {
+        margin-bottom: 50px;
     }
 `;
 

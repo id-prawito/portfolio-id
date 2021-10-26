@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export const PortoContainer = styled.div`
     color: #fff;
-    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#272429")};
+    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#030303")};
     @media screen and (max-width: 768px) {
         padding: 20px 20px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
     }
 `;
 
@@ -30,6 +34,12 @@ export const PortoWrapper = styled.div`
 
     @media (min-width: 768px) and (max-width: 890px) {
         height: 600px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 100%;
+        padding: 70px;
+        height: 1000px;
     }
 `;
 
@@ -76,8 +86,8 @@ export const ContentTwo = styled.div`
         }
     }
 
-    @media (min-width: 320px) and (max-width: 480px) {
-        width: 260px;
+    @media (min-width: 375px) and (max-width: 480px) {
+        width: 300px;
     }
 
     @media (min-width: 425px) and (max-width: 767px) {
@@ -86,6 +96,10 @@ export const ContentTwo = styled.div`
 
     @media (min-width: 768px) and (max-width: 890px) {
         width: 100%;
+    }
+
+    @media (max-width: 320px) {
+        width: 260px;
     }
 `;
 
@@ -116,7 +130,7 @@ export const TopLine = styled.div`
 export const Isi = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #383837;
+    background-color: #111111;
     min-width: 400px;
     border-radius: 10px;
     cursor: pointer;

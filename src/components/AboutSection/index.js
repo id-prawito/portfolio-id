@@ -8,7 +8,6 @@ import {
     TextWrapper,
     TopLine,
     TextDescription,
-    TextEnd,
     ContentTwo,
     Isi,
     Isi2,
@@ -38,7 +37,6 @@ const About = ({
                             <TextWrapper>
                                 <TopLine>{judul}</TopLine>
                                 <TextDescription>{keterangan}</TextDescription>
-                                <TextEnd>{link}</TextEnd>
                             </TextWrapper>
                         </ContentOne>
                         <ContentTwo>

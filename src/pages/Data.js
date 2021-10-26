@@ -34,6 +34,7 @@ export const heroObjTwo = {
     id: "hero",
     nama: "Hello, i’am Prawito.",
     deskripsiJob: "A frontend developer based in Indonesia.",
+    imgHero: require("../images/hero-img.jfif"),
     penjelasan:
         "I am a Product Designer, who uses accumulated experience in UX design to create/facilitate usable, functional & delightful digital products.",
 };
@@ -41,6 +42,7 @@ export const heroObjTwo = {
 export const valueObjThree = {
     id: "value",
     judul: "Value of Life",
+    valueImg: require("../images/img1.svg"),
     keterangan:
         "I have always believed, and I still believe, that whatever good or bad fortune may come our way we can always give it meaning and transform it into something of value.",
     link: "More about me",
@@ -145,26 +147,31 @@ export const contactObjSeven = {
             id: "1",
             imgContact: require("../images/twitter.svg"),
             judulContent: "Twitter",
+            linkTo: "https://twitter.com/id_praw",
         },
         {
             id: "2",
             imgContact: require("../images/driblee.svg"),
             judulContent: "Driblee",
+            linkTo: "",
         },
         {
             id: "3",
-            imgContact: require("../images/github.svg"),
+            imgContact: require("../images/github-white.svg"),
             judulContent: "Github",
+            linkTo: "https://github.com/id-prawito",
         },
         {
             id: "4",
             imgContact: require("../images/linkedin.svg"),
             judulContent: "Linkedin",
+            linkTo: "linkedin.com/in/prawito/",
         },
         {
             id: "5",
-            imgContact: require("../images/gmail.png"),
-            judulContent: "Gmail",
+            imgContact: require("../images/instagram.svg"),
+            judulContent: "Instagram",
+            linkTo: "https://www.instagram.com/praw.ito/",
         },
     ],
 };

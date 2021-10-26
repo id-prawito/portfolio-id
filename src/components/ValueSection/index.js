@@ -1,5 +1,4 @@
 import React from "react";
-import heroImg from "../../images/img1.svg";
 import {
     ValueContainer,
     ValueWrapper,
@@ -9,12 +8,11 @@ import {
     TextWrapper,
     TopLine,
     TextDescription,
-    TextEnd,
     ImgWrap,
     Img,
 } from "./ValueElements";
 
-const Work = ({ id, judul, keterangan, link }) => {
+const Work = ({ id, judul, keterangan, valueImg }) => {
     return (
         <>
             <ValueContainer id={id}>
@@ -24,12 +22,11 @@ const Work = ({ id, judul, keterangan, link }) => {
                             <TextWrapper>
                                 <TopLine>{judul}</TopLine>
                                 <TextDescription>{keterangan}</TextDescription>
-                                <TextEnd>{link}</TextEnd>
                             </TextWrapper>
                         </ContentOne>
                         <ContentTwo>
                             <ImgWrap>
-                                <Img src={heroImg}></Img>
+                                <Img src={valueImg.default}></Img>
                             </ImgWrap>
                         </ContentTwo>
                     </ValueRow>

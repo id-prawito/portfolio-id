@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 export const ExpeContainer = styled.div`
     color: #fff;
-    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#272429")};
+    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#030303")};
 
     @media screen and (max-width: 768px) {
         padding: 50px 20px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
     }
 `;
 
@@ -39,6 +43,11 @@ export const ExpeRow = styled.div`
         display: flex;
         flex-direction: column;
     }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
+        padding: 70px;
+    }
 `;
 
 export const ContentOne = styled.div`
@@ -51,6 +60,10 @@ export const ContentOne = styled.div`
 
     @media (min-width: 768px) and (max-width: 890px) {
         width: 100%;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 70%;
     }
 `;
 
@@ -72,7 +85,7 @@ export const ContentTwo = styled.div`
         width: 100%;
     }
 
-    @media (min-width: 768px) and (max-width: 890px) {
+    @media (max-width: 768px) and (max-width: 890px) {
         max-width: 100%;
     }
 `;
@@ -111,6 +124,10 @@ export const Isi = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px) {
         min-width: 100%;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        min-width: 270px;
     }
 `;
 

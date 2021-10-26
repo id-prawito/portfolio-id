@@ -10,8 +10,12 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
 
-    @media (min-width: 768px) and (max-width: 890px) {
+    @media (min-width: 768px) {
         height: 1000px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
     }
 
     &:before {
@@ -41,9 +45,13 @@ export const HeroIsi = styled.div`
         padding: 20px;
     }
 
-    @media (min-width: 768px) and (max-width: 890px) {
+    @media (max-width: 768px) {
         max-width: 700px;
-        margin-top: 100px;
+        margin-top: 20px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        padding: 70px;
     }
 `;
 

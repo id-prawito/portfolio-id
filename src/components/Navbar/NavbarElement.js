@@ -15,7 +15,11 @@ export const Nav = styled.nav`
     z-index: 10;
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
-    } ;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
+    }
 `;
 
 export const NavbarContainer = styled.div`
@@ -26,6 +30,9 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1250px;
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
+    }
 `;
 
 export const NavLogo = styled(LinkR)`

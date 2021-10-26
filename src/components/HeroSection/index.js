@@ -1,5 +1,4 @@
 import React from "react";
-import heroImg from "../../images/hero-img.jfif";
 
 import {
     HeroContainer,
@@ -10,11 +9,11 @@ import {
     TextP,
 } from "./HeroElements";
 
-const HeroSection = ({ id, nama, deskripsiJob, penjelasan }) => {
+const HeroSection = ({ id, nama, deskripsiJob, penjelasan, imgHero }) => {
     return (
         <HeroContainer id={id}>
             <HeroIsi>
-                <HeroImg src={heroImg}></HeroImg>
+                <HeroImg src={imgHero.default}></HeroImg>
                 <HeroText>
                     <TextH1>{nama}</TextH1>
                     <TextH1>{deskripsiJob}</TextH1>
