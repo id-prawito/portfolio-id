@@ -141,7 +141,7 @@ export const aboutObjSix = {
 export const contactObjSeven = {
     id: "contact",
     textdes: "Let’s Talk ?",
-    copyright: "Not Copyright 2021. Robert Jiggo. Webflow.",
+    copyright: "Not Copyright 2021. Robert Jiggo. Webflow",
     content: [
         {
             id: "1",
