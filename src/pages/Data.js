@@ -59,7 +59,7 @@ export const skillObjFour = {
             id: "1",
             logoContent: "<FaBeer />",
             judulContent: "Product Design",
-            color: "#00A4EF",
+            color: "#888888",
             keteranganContent:
                 "Product design as a verb is to create a new product to be sold by a business to its customers.",
         },
@@ -67,7 +67,7 @@ export const skillObjFour = {
             id: "2",
             logoContent: "<FaBeer />",
             judulContent: "Product Design",
-            color: "#FFCD40",
+            color: "#888888",
             keteranganContent:
                 "Product design as a verb is to create a new product to be sold by a business to its customers.",
         },
@@ -75,7 +75,7 @@ export const skillObjFour = {
             id: "3",
             logoContent: "<FaBeer />",
             judulContent: "Product Design",
-            color: "#9E45C5",
+            color: "#888888",
             keteranganContent:
                 "Product design as a verb is to create a new product to be sold by a business to its customers.",
         },
@@ -83,7 +83,7 @@ export const skillObjFour = {
             id: "4",
             logoContent: "<FaBeer />",
             judulContent: "Product Design",
-            color: "#00A4EF",
+            color: "#888888",
             keteranganContent:
                 "Product design as a verb is to create a new product to be sold by a business to its customers.",
         },
