@@ -1,5 +1,4 @@
 import React from "react";
-import "./expe.css";
 
 import {
     ExpeContainer,
@@ -20,10 +19,6 @@ import {
 
 const Experience = ({ id, textdes, topLine, content }) => {
     const dataMaping = content;
-
-    // const response = axios.get("url+endpoint");
-
-    console.table(dataMaping);
     return (
         <>
             <ExpeContainer id={id}>

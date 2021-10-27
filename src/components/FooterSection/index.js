@@ -1,5 +1,5 @@
 import React from "react";
-import logoImg from "../../images/logo-.png";
+
 import {
     FooterContainer,
     FooterWrapper,
@@ -16,7 +16,7 @@ import {
     HeroGambar,
 } from "./FooterElements";
 
-const Footer = ({ id, textdes, content }) => {
+const Footer = ({ id, textdes, content, logoImg }) => {
     const dataContact = content;
     return (
         <>
@@ -35,7 +35,7 @@ const Footer = ({ id, textdes, content }) => {
                                 <IconWrap
                                     data-aos="fade-left"
                                     data-aos-duration="700"
-                                    data-aos-offset="200"
+                                    data-aos-offset="-100"
                                 >
                                     {dataContact.map((contact) => (
                                         <Icon
@@ -54,7 +54,7 @@ const Footer = ({ id, textdes, content }) => {
                                         data-aos="fade-up"
                                         data-aos-duration="700"
                                         data-aos-offset="-200"
-                                        src={logoImg}
+                                        src={logoImg.default}
                                     ></HeroGambar>
                                 </TextEnd>
                             </TextWrapper>

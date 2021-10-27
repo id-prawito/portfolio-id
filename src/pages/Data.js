@@ -145,6 +145,7 @@ export const aboutObjSix = {
 export const contactObjSeven = {
     id: "contact",
     textdes: "Let’s Talk ?",
+    logoImg: require("../images/logo-.png"),
     copyright: "Not Copyright 2021. Robert Jiggo. Webflow",
     content: [
         {
