@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ValueContainer = styled.div`
     color: #fff;
-    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#DCC9B9")};
+    background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#111111")};
     @media screen and (max-width: 768px) {
         padding: 50px 20px;
     }
@@ -74,7 +74,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-    color: #272429;
+    color: #fff;
     font-size: 55px;
     font-weight: 700;
     margin-bottom: 16px;
@@ -85,7 +85,7 @@ export const TopLine = styled.div`
 
 export const TextDescription = styled.p`
     font-size: 18px;
-    color: #444047;
+    color: #7b7b7b;
     line-height: 27px;
     margin-bottom: 220px;
     @media screen and (max-width: 768px) {
