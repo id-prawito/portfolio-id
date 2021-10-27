@@ -18,13 +18,21 @@ const Work = ({ id, judul, keterangan, valueImg }) => {
             <ValueContainer id={id}>
                 <ValueWrapper>
                     <ValueRow>
-                        <ContentOne>
+                        <ContentOne
+                            data-aos="fade-right"
+                            data-aos-duration="700"
+                            data-aos-offset="200"
+                        >
                             <TextWrapper>
                                 <TopLine>{judul}</TopLine>
                                 <TextDescription>{keterangan}</TextDescription>
                             </TextWrapper>
                         </ContentOne>
-                        <ContentTwo>
+                        <ContentTwo
+                            data-aos="fade-up"
+                            data-aos-duration="700"
+                            data-aos-offset="200"
+                        >
                             <ImgWrap>
                                 <Img src={valueImg.default}></Img>
                             </ImgWrap>

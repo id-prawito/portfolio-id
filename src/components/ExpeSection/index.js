@@ -1,4 +1,5 @@
 import React from "react";
+import "./expe.css";
 
 import {
     ExpeContainer,
@@ -19,20 +20,33 @@ import {
 
 const Experience = ({ id, textdes, topLine, content }) => {
     const dataMaping = content;
+
+    // const response = axios.get("url+endpoint");
+
+    console.table(dataMaping);
     return (
         <>
             <ExpeContainer id={id}>
                 <ExpeWrapper>
                     <ExpeRow>
-                        <ContentOne>
+                        <ContentOne
+                            data-aos="fade-right"
+                            data-aos-duration="700"
+                            data-aos-offset="200"
+                        >
                             <TextWrapper>
                                 <TextDescription>{textdes}</TextDescription>
                                 <TopLine>{topLine}</TopLine>
                             </TextWrapper>
                         </ContentOne>
                         <ContentTwo>
-                            {dataMaping.map((expe, index) => (
-                                <Isi key={index}>
+                            {dataMaping.map((expe) => (
+                                <Isi
+                                    data-aos="fade-left"
+                                    data-aos-duration="700"
+                                    data-aos-offset="200"
+                                    key={expe.nomor}
+                                >
                                     <TextBungkus>
                                         <Angka>{expe.nomor}</Angka>
                                         <BungkusDes>

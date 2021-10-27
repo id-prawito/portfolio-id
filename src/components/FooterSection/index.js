@@ -1,5 +1,5 @@
 import React from "react";
-
+import logoImg from "../../images/logo-.png";
 import {
     FooterContainer,
     FooterWrapper,
@@ -13,9 +13,10 @@ import {
     TextEnd,
     ContentTwo,
     NavLinks,
+    HeroGambar,
 } from "./FooterElements";
 
-const Footer = ({ id, textdes, content, copyright }) => {
+const Footer = ({ id, textdes, content }) => {
     const dataContact = content;
     return (
         <>
@@ -24,8 +25,18 @@ const Footer = ({ id, textdes, content, copyright }) => {
                     <FooterRow>
                         <ContentOne>
                             <TextWrapper>
-                                <TopLine>{textdes}</TopLine>
-                                <IconWrap>
+                                <TopLine
+                                    data-aos="fade-right"
+                                    data-aos-duration="700"
+                                    data-aos-offset="200"
+                                >
+                                    {textdes}
+                                </TopLine>
+                                <IconWrap
+                                    data-aos="fade-left"
+                                    data-aos-duration="700"
+                                    data-aos-offset="200"
+                                >
                                     {dataContact.map((contact) => (
                                         <Icon
                                             href={contact.linkTo}
@@ -38,10 +49,21 @@ const Footer = ({ id, textdes, content, copyright }) => {
                                         </Icon>
                                     ))}
                                 </IconWrap>
-                                <TextEnd>{copyright}</TextEnd>
+                                <TextEnd>
+                                    <HeroGambar
+                                        data-aos="fade-up"
+                                        data-aos-duration="700"
+                                        data-aos-offset="-200"
+                                        src={logoImg}
+                                    ></HeroGambar>
+                                </TextEnd>
                             </TextWrapper>
                         </ContentOne>
-                        <ContentTwo>
+                        <ContentTwo
+                            data-aos="fade-left"
+                            data-aos-duration="700"
+                            data-aos-offset="200"
+                        >
                             <TextWrapper>
                                 <NavLinks
                                     to="experience"

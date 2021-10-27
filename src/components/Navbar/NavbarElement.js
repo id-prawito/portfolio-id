@@ -45,6 +45,18 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        margin-left: 16px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        margin-left: 40px;
+    }
+
+    @media (min-width: 1024px) {
+        margin-left: 2px;
+    }
 `;
 
 export const MobileIcon = styled.div`
@@ -102,5 +114,13 @@ export const NavLinks = styled(LinkS)`
 
     &:hover {
         color: #9e45c5;
+    }
+`;
+
+export const HeroGambar = styled.img`
+    height: 50px;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        height: 32px;
     }
 `;

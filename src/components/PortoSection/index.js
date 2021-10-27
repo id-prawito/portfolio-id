@@ -14,6 +14,7 @@ import {
     TextBungkus,
     Judul,
     TextPenjelasan,
+    HoverContent,
 } from "./PortoElements";
 
 const Porto = ({ id, textdes, topLine, content }) => {
@@ -23,7 +24,11 @@ const Porto = ({ id, textdes, topLine, content }) => {
             <PortoContainer id={id}>
                 <PortoWrapper>
                     <PortoRow>
-                        <ContentOne>
+                        <ContentOne
+                            data-aos="fade-down"
+                            data-aos-duration="700"
+                            data-aos-offset="200"
+                        >
                             <TextWrapper>
                                 <TextDescription>{textdes}</TextDescription>
                                 <TopLine>{topLine}</TopLine>
@@ -31,17 +36,26 @@ const Porto = ({ id, textdes, topLine, content }) => {
                         </ContentOne>
                         <ContentTwo>
                             {portoContent.map((porto) => (
-                                <Isi key={porto.id}>
-                                    <ImgBungkus>
-                                        <Img src={porto.imgWork.default}></Img>
-                                    </ImgBungkus>
-                                    <TextBungkus>
-                                        <Judul>{porto.judulContent}</Judul>
-                                        <TextPenjelasan maxLength="11">
-                                            {porto.keteranganContent}
-                                        </TextPenjelasan>
-                                    </TextBungkus>
-                                </Isi>
+                                <HoverContent
+                                    data-aos="fade-left"
+                                    data-aos-duration="700"
+                                    data-aos-offset="200"
+                                    key={porto.id}
+                                >
+                                    <Isi>
+                                        <ImgBungkus>
+                                            <Img
+                                                src={porto.imgWork.default}
+                                            ></Img>
+                                        </ImgBungkus>
+                                        <TextBungkus>
+                                            <Judul>{porto.judulContent}</Judul>
+                                            <TextPenjelasan maxLength="11">
+                                                {porto.keteranganContent}
+                                            </TextPenjelasan>
+                                        </TextBungkus>
+                                    </Isi>
+                                </HoverContent>
                             ))}
                         </ContentTwo>
                     </PortoRow>

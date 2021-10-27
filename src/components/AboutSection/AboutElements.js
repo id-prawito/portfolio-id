@@ -211,3 +211,5 @@ export const TextPenjelasan = styled.p`
         line-height: 18px;
     }
 `;
+
+export const HoverContent = styled.div``;

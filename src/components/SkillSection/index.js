@@ -16,14 +16,18 @@ import {
     TextPenjelasan,
 } from "./SkillElements";
 
-const Skill = ({ id, judul, keterangan, link, content }) => {
+const Skill = ({ id, judul, keterangan, content }) => {
     const contentSkill = content;
     return (
         <>
             <SkillContainer id={id}>
                 <SkillWrapper>
                     <SkillRow>
-                        <ContentOne>
+                        <ContentOne
+                            data-aos="fade-down"
+                            data-aos-duration="700"
+                            data-aos-offset="200"
+                        >
                             <TextWrapper>
                                 <TopLine>{judul}</TopLine>
                                 <TextDescription>{keterangan}</TextDescription>
@@ -31,7 +35,12 @@ const Skill = ({ id, judul, keterangan, link, content }) => {
                         </ContentOne>
                         <ContentTwo>
                             {contentSkill.map((skill, index) => (
-                                <Isi key={index}>
+                                <Isi
+                                    data-aos="fade-right"
+                                    data-aos-duration="700"
+                                    data-aos-offset="200"
+                                    key={index}
+                                >
                                     <Icon color={skill.color}>
                                         <FaTh />
                                     </Icon>

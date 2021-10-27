@@ -56,6 +56,7 @@ export const skillObjFour = {
     link: "Tell me more",
     content: [
         {
+            id: "1",
             logoContent: "<FaBeer />",
             judulContent: "Product Design",
             color: "#00A4EF",
@@ -63,6 +64,7 @@ export const skillObjFour = {
                 "Product design as a verb is to create a new product to be sold by a business to its customers.",
         },
         {
+            id: "2",
             logoContent: "<FaBeer />",
             judulContent: "Product Design",
             color: "#FFCD40",
@@ -70,6 +72,7 @@ export const skillObjFour = {
                 "Product design as a verb is to create a new product to be sold by a business to its customers.",
         },
         {
+            id: "3",
             logoContent: "<FaBeer />",
             judulContent: "Product Design",
             color: "#9E45C5",
@@ -77,6 +80,7 @@ export const skillObjFour = {
                 "Product design as a verb is to create a new product to be sold by a business to its customers.",
         },
         {
+            id: "4",
             logoContent: "<FaBeer />",
             judulContent: "Product Design",
             color: "#00A4EF",

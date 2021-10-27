@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "aos/dist/aos.css";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import About from "../components/AboutSection";

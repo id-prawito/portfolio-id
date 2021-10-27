@@ -150,3 +150,11 @@ export const NavLinks = styled(LinkS)`
         color: #cdcdcd;
     }
 `;
+
+export const HeroGambar = styled.img`
+    height: 50px;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        height: 32px;
+    }
+`;
