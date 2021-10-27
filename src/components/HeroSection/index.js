@@ -7,6 +7,7 @@ import {
     HeroImg,
     HeroText,
     TextH1,
+    TextH2,
     TextP,
 } from "./HeroElements";
 import { useEffect } from "react";
@@ -28,21 +29,21 @@ const HeroSection = ({ id, nama, deskripsiJob, penjelasan, imgHero }) => {
                     <TextH1
                         data-aos="fade-up"
                         data-aos-duration="700"
-                        data-aos-offset="200"
+                        data-aos-offset="100"
                     >
                         {nama}
                     </TextH1>
-                    <TextH1
+                    <TextH2
                         data-aos="fade-up"
                         data-aos-duration="700"
-                        data-aos-offset="200"
+                        data-aos-offset="100"
                     >
                         {deskripsiJob}
-                    </TextH1>
+                    </TextH2>
                     <TextP
                         data-aos="fade-right"
                         data-aos-duration="700"
-                        data-aos-offset="200"
+                        data-aos-offset="100"
                     >
                         {penjelasan}
                     </TextP>

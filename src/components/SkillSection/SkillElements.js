@@ -40,6 +40,10 @@ export const SkillWrapper = styled.div`
         width: 100%;
         padding: 70px;
     }
+
+    @media (min-width: 1024px) and (max-width: 1400px) {
+        height: 730px;
+    }
 `;
 
 export const SkillRow = styled.div`
@@ -146,6 +150,20 @@ export const Judul = styled.div`
 
 export const TextPenjelasan = styled.p`
     font-size: 18px;
+    color: #7b7b7b;
+    line-height: 27px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        line-height: 18px;
+    }
+`;
+
+export const TextEnd = styled.p`
+    font-size: 12px;
     color: #7b7b7b;
     line-height: 27px;
     margin-bottom: 20px;

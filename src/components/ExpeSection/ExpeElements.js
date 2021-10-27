@@ -29,6 +29,10 @@ export const ExpeWrapper = styled.div`
         padding: 20px;
         height: 100%;
     }
+
+    @media (min-width: 1024px) and (max-width: 1400px) {
+        height: 700px;
+    }
 `;
 
 export const ExpeRow = styled.div`
@@ -188,6 +192,7 @@ export const TextPenjelasan = styled.p`
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
+    margin-top: 5px;
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
     @media screen and (max-width: 768px) {

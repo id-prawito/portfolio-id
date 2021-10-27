@@ -10,12 +10,21 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 1147px;
+        height: 700px;
+    }
+
+    @media (min-width: 426px) and (max-width: 768px) {
         height: 1000px;
     }
 
-    @media (min-width: 769px) and (max-width: 1024px) {
-        width: 1147px;
+    @media (min-width: 1400px) {
+        height: 1000px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1400px) {
+        height: 750px;
     }
 
     &:before {
@@ -86,7 +95,7 @@ export const HeroText = styled.div`
 
 export const TextH1 = styled.h1`
     font-size: 60px;
-    color: #fff;
+    color: #888;
     margin-bottom: 20px;
 
     @media screen and (max-width: 768px) {
@@ -95,9 +104,20 @@ export const TextH1 = styled.h1`
     }
 `;
 
+export const TextH2 = styled.h1`
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+        text-align: center;
+    }
+`;
+
 export const TextP = styled.p`
     font-size: 18px;
-    color: #fff;
+    color: #888;
     line-height: 35px;
 
     @media screen and (max-width: 768px) {
