@@ -37,7 +37,7 @@ const Porto = ({ id, textdes, topLine, content }) => {
                         <ContentTwo>
                             {portoContent.map((porto) => (
                                 <HoverContent
-                                    data-aos="fade-left"
+                                    data-aos="zoom-out"
                                     data-aos-duration="700"
                                     data-aos-offset="200"
                                     key={porto.id}

@@ -40,7 +40,7 @@ const HeroSection = ({ id, nama, deskripsiJob, penjelasan, imgHero }) => {
                         {deskripsiJob}
                     </TextH1>
                     <TextP
-                        data-aos="fade-left"
+                        data-aos="fade-right"
                         data-aos-duration="700"
                         data-aos-offset="200"
                     >

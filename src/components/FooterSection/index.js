@@ -33,7 +33,7 @@ const Footer = ({ id, textdes, content, logoImg }) => {
                                     {textdes}
                                 </TopLine>
                                 <IconWrap
-                                    data-aos="fade-left"
+                                    data-aos="fade-right"
                                     data-aos-duration="700"
                                     data-aos-offset="-100"
                                 >
@@ -60,7 +60,7 @@ const Footer = ({ id, textdes, content, logoImg }) => {
                             </TextWrapper>
                         </ContentOne>
                         <ContentTwo
-                            data-aos="fade-left"
+                            data-aos="fade-right"
                             data-aos-duration="700"
                             data-aos-offset="200"
                         >

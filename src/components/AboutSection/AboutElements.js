@@ -115,6 +115,10 @@ export const TopLine = styled.div`
     @media screen and (max-width: 768px) {
         font-size: 40px;
     }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 30px;
+    }
 `;
 
 export const TextDescription = styled.p`

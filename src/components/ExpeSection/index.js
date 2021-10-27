@@ -37,7 +37,7 @@ const Experience = ({ id, textdes, topLine, content }) => {
                         <ContentTwo>
                             {dataMaping.map((expe) => (
                                 <Isi
-                                    data-aos="fade-left"
+                                    data-aos="fade-right"
                                     data-aos-duration="700"
                                     data-aos-offset="200"
                                     key={expe.nomor}

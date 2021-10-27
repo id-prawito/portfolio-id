@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "aos/dist/aos.css";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import About from "../components/AboutSection";
@@ -18,6 +17,8 @@ import {
     aboutObjSix,
     contactObjSeven,
 } from "../pages/Data";
+
+import "aos/dist/aos.css";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);

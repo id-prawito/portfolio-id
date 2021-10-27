@@ -19,7 +19,7 @@ const Work = ({ id, judul, keterangan, valueImg }) => {
                 <ValueWrapper>
                     <ValueRow>
                         <ContentOne
-                            data-aos="fade-right"
+                            data-aos="zoom-in"
                             data-aos-duration="700"
                             data-aos-offset="200"
                         >
