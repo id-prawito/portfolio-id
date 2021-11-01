@@ -15,19 +15,22 @@ import {
     TitleJob,
     TextPenjelasan,
     HoverContent,
+    TextUl,
+    TextLi,
 } from "./AboutElements";
 
 const About = ({
     id,
     judul,
     keterangan,
-    link,
+    keteranganTwo,
     judulAboutFirst,
     judulAboutSecond,
     titleAboutFirst,
     titleAboutSecond,
     descAboutFirst,
     descAboutSecond,
+    keteranganThree,
 }) => {
     return (
         <>
@@ -42,6 +45,24 @@ const About = ({
                             <TextWrapper>
                                 <TopLine>{judul}</TopLine>
                                 <TextDescription>{keterangan}</TextDescription>
+                                <TextDescription>
+                                    {keteranganTwo}
+                                </TextDescription>
+                                <TextDescription>
+                                    {keteranganThree}
+                                </TextDescription>
+
+                                <TextUl>
+                                    <TextLi>JavaScript (ES6+)</TextLi>
+                                    <TextLi>React Js</TextLi>
+                                    <TextLi>Vue Js</TextLi>
+                                    <TextLi>Laravel</TextLi>
+                                    <TextLi>HTML</TextLi>
+                                    <TextLi>CSS</TextLi>
+                                    <TextLi>Node Js</TextLi>
+                                    <TextLi>PHP</TextLi>
+                                    <TextLi>MySQL</TextLi>
+                                </TextUl>
                             </TextWrapper>
                         </ContentOne>
                         <ContentTwo>

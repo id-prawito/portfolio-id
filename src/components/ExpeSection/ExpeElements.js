@@ -128,6 +128,7 @@ export const Isi = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px) {
         min-width: 100%;
+        height: 400px;
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -137,6 +138,7 @@ export const Isi = styled.div`
 
 export const TextBungkus = styled.div`
     padding: 20px 32px 20px 0px;
+    height: 400px;
     @media screen and (max-width: 768px) {
         gap: 20px;
         display: flex;
@@ -146,6 +148,8 @@ export const TextBungkus = styled.div`
 
     @media (min-width: 320px) and (max-width: 480px) {
         padding: 20px;
+        flex-direction: column;
+        height: 200px;
     }
 `;
 
@@ -159,7 +163,7 @@ export const Angka = styled.div`
     }
 
     @media (min-width: 320px) and (max-width: 480px) {
-        font-size: 60px;
+        font-size: 80px;
     }
 `;
 
@@ -185,15 +189,15 @@ export const Judul = styled.div`
     }
 `;
 
-export const TextPenjelasan = styled.p`
-    font-size: 18px;
+export const TextPenjelasan = styled.div`
+    font-size: 14px;
     color: #7b7b7b;
     line-height: 27px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     margin-top: 5px;
-    -webkit-line-clamp: 3; /* number of lines to show */
+
     -webkit-box-orient: vertical;
     @media screen and (max-width: 768px) {
         font-size: 14px;

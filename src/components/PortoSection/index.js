@@ -15,6 +15,7 @@ import {
     Judul,
     TextPenjelasan,
     HoverContent,
+    LinkPorto,
 } from "./PortoElements";
 
 const Porto = ({ id, textdes, topLine, content }) => {
@@ -43,11 +44,13 @@ const Porto = ({ id, textdes, topLine, content }) => {
                                     key={porto.id}
                                 >
                                     <Isi>
-                                        <ImgBungkus>
-                                            <Img
-                                                src={porto.imgWork.default}
-                                            ></Img>
-                                        </ImgBungkus>
+                                        <LinkPorto to={porto.routeLink}>
+                                            <ImgBungkus>
+                                                <Img
+                                                    src={porto.imgWork.default}
+                                                ></Img>
+                                            </ImgBungkus>
+                                        </LinkPorto>
                                         <TextBungkus>
                                             <Judul>{porto.judulContent}</Judul>
                                             <TextPenjelasan maxLength="11">

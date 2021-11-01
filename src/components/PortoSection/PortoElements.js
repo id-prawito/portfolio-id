@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const PortoContainer = styled.div`
     color: #fff;
@@ -9,6 +10,10 @@ export const PortoContainer = styled.div`
 
     @media (min-width: 769px) and (max-width: 1024px) {
         width: 1147px;
+    }
+
+    @media (max-width: 320px) {
+        height: 500px;
     }
 `;
 
@@ -29,7 +34,7 @@ export const PortoWrapper = styled.div`
     }
 
     @media (min-width: 320px) and (max-width: 480px) {
-        height: 600px;
+        height: 500px;
     }
 
     @media (min-width: 768px) and (max-width: 890px) {
@@ -129,6 +134,7 @@ export const TopLine = styled.div`
 
 export const Isi = styled.div`
     display: flex;
+    width: 30%;
     flex-direction: column;
     background-color: #111111;
     min-width: 400px;
@@ -213,3 +219,7 @@ export const TextPenjelasan = styled.p`
 `;
 
 export const HoverContent = styled.div``;
+
+export const LinkPorto = styled(LinkR)`
+    text-decoration: none;
+`;

@@ -5,12 +5,12 @@ export const AboutContainer = styled.div`
     background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#030303")};
     @media screen and (max-width: 768px) {
         padding: 50px 20px;
-        height: 744px;
+        height: 900px;
     }
 
     @media (min-width: 320px) and (max-width: 480px) {
         padding: 20px 20px;
-        height: 844px;
+        height: 1250px;
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -18,7 +18,7 @@ export const AboutContainer = styled.div`
     }
 
     @media (max-width: 320px) {
-        height: 920px;
+        height: 1400px;
     }
 `;
 
@@ -59,7 +59,7 @@ export const AboutRow = styled.div`
     @media (min-width: 769px) and (max-width: 1024px) {
         width: 100%;
         padding: 70px;
-        height: 1070px;
+        height: 770px;
     }
 `;
 
@@ -84,7 +84,6 @@ export const ContentTwo = styled.div`
 export const TextWrapper = styled.div`
     padding-top: 0;
     width: 500px;
-    margin-top: 50px;
     @media screen and (max-width: 768px) {
         width: 100%;
     }
@@ -132,11 +131,15 @@ export const TextDescription = styled.p`
     }
 
     @media (min-width: 1140px) {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     @media (min-width: 320px) and (max-width: 480px) {
         line-height: 18px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        margin-bottom: 20px;
     }
 `;
 
@@ -217,3 +220,28 @@ export const TextPenjelasan = styled.p`
 `;
 
 export const HoverContent = styled.div``;
+
+export const TextUl = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+`;
+
+export const TextLi = styled.li`
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 13px;
+    &::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: rgb(158, 69, 197);
+        font-size: 20px;
+        line-height: 15px;
+    }
+`;

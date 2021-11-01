@@ -1,5 +1,7 @@
 import React from "react";
 
+import downloadFile from "../../images/CV_PRAWITO.pdf";
+
 import {
     FooterContainer,
     FooterWrapper,
@@ -10,13 +12,12 @@ import {
     IconWrap,
     Icon,
     IconImg,
-    TextEnd,
     ContentTwo,
     NavLinks,
-    HeroGambar,
+    ButtonResume,
 } from "./FooterElements";
 
-const Footer = ({ id, textdes, content, logoImg }) => {
+const Footer = ({ id, textdes, content }) => {
     const dataContact = content;
     return (
         <>
@@ -49,14 +50,16 @@ const Footer = ({ id, textdes, content, logoImg }) => {
                                         </Icon>
                                     ))}
                                 </IconWrap>
-                                <TextEnd>
-                                    <HeroGambar
-                                        data-aos="fade-up"
-                                        data-aos-duration="700"
-                                        data-aos-offset="-200"
-                                        src={logoImg.default}
-                                    ></HeroGambar>
-                                </TextEnd>
+
+                                <ButtonResume
+                                    data-aos="fade-up"
+                                    data-aos-duration="700"
+                                    data-aos-offset="-200"
+                                    href={downloadFile}
+                                    download
+                                >
+                                    Download My CV
+                                </ButtonResume>
                             </TextWrapper>
                         </ContentOne>
                         <ContentTwo

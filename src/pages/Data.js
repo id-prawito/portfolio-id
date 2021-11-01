@@ -1,31 +1,31 @@
 export const expeObjOne = {
     id: "experience",
     textdes: "EXPERIENCE",
-    topLine: "Companies i have worked for in the past",
+    topLine: "Internship and Training",
     content: [
         {
             nomor: "01",
-            judul: "Microsoft",
-            keterangan: "Interaction Designer",
-            color: "#00A4EF",
+            judul: "PT. KAI Indonesia,",
+            keterangan: "Frontend Developer [Intership]",
+            color: "#9E45C5",
             deskripsi:
-                "OI thrive on the challenge of leading interaction and visual design efforts with product and development staff toward results that meet business and UX goals.",
+                "Designed, built, and tested an online system for PT.KAI DAOP 6 Yogyakarta employees using PHP, HTML, Bootstrap, JavaScript, and MySQL.",
         },
         {
             nomor: "02",
-            judul: "Google",
-            keterangan: "Product Designer",
-            color: "#FFCD40",
+            judul: "DTS Kominfo,",
+            keterangan: "Frontend IT Perbankan",
+            color: "#9E45C5",
             deskripsi:
-                "A Product Designer is someone who uses the different facets and tools of design to create and execute a solution that solves for a user’s experience deficiencies.",
+                "Training to answer the challenges of technological developments in the service sector financial management that aims to equip trainees with basic knowledge, specific hard skills and soft skills with the needs of the banking industry.",
         },
         {
             nomor: "03",
-            judul: "Yahoo",
-            keterangan: "Icon Designer",
+            judul: "DTS Kominfo,",
+            keterangan: "Big Data Analytics",
             color: "#9E45C5",
             deskripsi:
-                "As the name implies, I am focused on making various forms of unique icon designs and of course that can be applied to various platforms.",
+                "Shared knowledge about how to do basic coding with Python. Worked on some final projects to solved current problems using Machine Learning, and data twitter.",
         },
     ],
 };
@@ -36,13 +36,13 @@ export const heroObjTwo = {
     deskripsiJob: "A frontend developer based in Indonesia.",
     imgHero: require("../images/hero-img.jfif"),
     penjelasan:
-        "I am a Product Designer, who uses accumulated experience in UX design to create/facilitate usable, functional & delightful digital products.",
+        "I like to design user interfaces and implement them into code as the appearance of a website or application so as to provide a product with a great user experience.",
 };
 
 export const valueObjThree = {
     id: "value",
     judul: "Value of Life",
-    valueImg: require("../images/img1.svg"),
+    valueImg: require("../images/value.svg"),
     keterangan:
         "I have always believed, and I still believe, that whatever good or bad fortune may come our way we can always give it meaning and transform it into something of value.",
     link: "More about me",
@@ -52,40 +52,32 @@ export const skillObjFour = {
     id: "skillset",
     judul: "Skillset",
     keterangan:
-        "The UX skills that designers need are varied, stemming from areas such as graphic design, psychology, engineering, and marketing. UX designers must cultivate a wheelhouse of both applied and soft skills to excel.",
+        "I really like programming and coding, I’m focused on building (and occasionally designing) exceptional digital experiences. Here are some of the skills I have:",
     link: "Tell me more",
     content: [
         {
             id: "1",
-            logoContent: "<FaBeer />",
-            judulContent: "Product Design",
-            color: "#888888",
-            keteranganContent:
-                "Product design as a verb is to create a new product to be sold by a business to its customers.",
+            judulContent: "Programming Languages",
+            color: "#9E45C5",
+            keteranganContent: "JavaScript, PHP & SQL",
         },
         {
             id: "2",
-            logoContent: "<FaBeer />",
-            judulContent: "Product Design",
-            color: "#888888",
-            keteranganContent:
-                "Product design as a verb is to create a new product to be sold by a business to its customers.",
+            judulContent: "Libraries & Framework",
+            color: "#9E45C5",
+            keteranganContent: "React Js & Laravel",
         },
         {
             id: "3",
-            logoContent: "<FaBeer />",
-            judulContent: "Product Design",
-            color: "#888888",
-            keteranganContent:
-                "Product design as a verb is to create a new product to be sold by a business to its customers.",
+            judulContent: "Tools & Platforms",
+            color: "#9E45C5",
+            keteranganContent: "Visual Code, Git & Firebase",
         },
         {
             id: "4",
-            logoContent: "<FaBeer />",
-            judulContent: "Product Design",
-            color: "#888888",
-            keteranganContent:
-                "Product design as a verb is to create a new product to be sold by a business to its customers.",
+            judulContent: "Others",
+            color: "#9E45C5",
+            keteranganContent: "HTML, CSS, Corel, Figma, Adobe Illustrator",
         },
     ],
 };
@@ -93,53 +85,58 @@ export const skillObjFour = {
 export const portoObjFive = {
     id: "porto",
     textdes: "PORTOFOLIO",
-    topLine: "My work for the last 6 years",
+    topLine: "Some Things I’ve Built",
     content: [
         {
             id: "1",
-            imgWork: require("../images/r1.png"),
-            judulContent: "Product Design",
+            imgWork: require("../images/landing.jpg"),
+            judulContent: "SPK - Promethee",
             keteranganContent:
-                "On this occasion, I created a user-friendly interface for the clear cache application, so that users are comfortable when using it.",
+                "Decision Support System for Priority Determination of Small Dam Construction Development with The Promethee Method (Preference Ranking Organization Method for Enrichment Evaluation).",
+            routeLink: "/pages",
         },
-        {
-            id: "2",
-            imgWork: require("../images/r2.png"),
-            judulContent: "Icon Design",
-            keteranganContent:
-                "On this occasion, I created a user-friendly interface for the clear cache application, so that users are comfortable when using it.",
-        },
-        {
-            id: "3",
-            imgWork: require("../images/r3.png"),
-            judulContent: "UX Design",
-            keteranganContent:
-                "On this occasion, I created a user-friendly interface for the clear cache application, so that users are comfortable when using it.",
-        },
-        {
-            id: "4",
-            imgWork: require("../images/r1.png"),
-            judulContent: "Web Design",
-            keteranganContent:
-                "On this occasion, I created a user-friendly interface for the clear cache application, so that users are comfortable when using it.",
-        },
+        // {
+        //     id: "2",
+        //     imgWork: require("../images/r2.png"),
+        //     judulContent: "Icon Design",
+        //     keteranganContent:
+        //         "On this occasion, I created a user-friendly interface for the clear cache application, so that users are comfortable when using it.",
+        // },
+        // {
+        //     id: "3",
+        //     imgWork: require("../images/r3.png"),
+        //     judulContent: "UX Design",
+        //     keteranganContent:
+        //         "On this occasion, I created a user-friendly interface for the clear cache application, so that users are comfortable when using it.",
+        // },
+        // {
+        //     id: "4",
+        //     imgWork: require("../images/r1.png"),
+        //     judulContent: "Web Design",
+        //     keteranganContent:
+        //         "On this occasion, I created a user-friendly interface for the clear cache application, so that users are comfortable when using it.",
+        // },
     ],
 };
 
 export const aboutObjSix = {
     id: "about",
-    judul: "What people say about me",
+    judul: "About me, & what people say",
     keterangan:
-        "Here are a few testimonials from people who I have worked with.",
+        "Hello, my name is Prawito, a graduate student from Diponegoro University in 2021 from the Department of Computer Engineering, Faculty of Engineering. I really like challenges and learning new things.",
+    keteranganTwo:
+        "In my major, I prefer to learn about the science of frontend developers, creating and designing multiple views of a website. The skills that I have to support a career in IT are JavaScript, HTML, CSS, and MySQL, Reacts Js, PHP and or other technologies.",
+    keteranganThree:
+        "Here are a few technologies I’ve been working with recently:",
     link: "See All Testimonials !",
-    judulAboutFirst: "Product Design",
-    judulAboutSecond: "Product Design",
-    titleAboutFirst: "Product Design",
-    titleAboutSecond: "Product Design",
+    judulAboutFirst: "Primus Widya Prabandono",
+    judulAboutSecond: "Muhammad Refi",
+    titleAboutFirst: "UI UX Designer",
+    titleAboutSecond: "IT & ERP Officer",
     descAboutFirst:
-        "“Having a co-worker like Robert is a miracle! his work is always good and very observant of details. Not only that, he was able to complete tasks on time and of course the results were very satisfying”",
+        "“Praw is eager to learn and is not afraid of new challenges. He is a hard working person and has a high curiosity.”",
     descAboutSecond:
-        "“Robert is a very valuable asset to my company. his works can always win over the hearts of users. Apart from focusing on his work, he is also a friendly person with other people”",
+        "“Prawito is a person who is persistent in learning, his enthusiasm for seeking knowledge is very high, it can be seen when we are a project team in creating an information system for PT. KAI DAOP 6”",
 };
 
 export const contactObjSeven = {
@@ -170,7 +167,7 @@ export const contactObjSeven = {
             id: "4",
             imgContact: require("../images/linkedin.svg"),
             judulContent: "Linkedin",
-            linkTo: "linkedin.com/in/prawito/",
+            linkTo: "https://linkedin.com/in/prawito/",
         },
         {
             id: "5",

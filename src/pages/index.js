@@ -8,6 +8,8 @@ import Value from "../components/ValueSection";
 import Porto from "../components/PortoSection";
 import Experience from "../components/ExpeSection";
 import Footer from "../components/FooterSection";
+import NavbarPages from "../components/PortoPages/Navbar";
+import NotFoundPages from "../components/404/index";
 import {
     expeObjOne,
     heroObjTwo,
@@ -19,8 +21,10 @@ import {
 } from "../pages/Data";
 
 import "aos/dist/aos.css";
+import PortoPages from "../components/PortoPages";
+import FooterPages from "../components/PortoPages/Footer";
 
-const Home = () => {
+export const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -42,4 +46,26 @@ const Home = () => {
     );
 };
 
-export default Home;
+export const Pages = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <>
+            <NavbarPages toggle={toggle} />
+            <PortoPages {...portoObjFive} />
+            <FooterPages {...contactObjSeven} />
+        </>
+    );
+};
+
+export const NotFound = () => {
+    return (
+        <>
+            <NotFoundPages {...heroObjTwo} />
+        </>
+    );
+};

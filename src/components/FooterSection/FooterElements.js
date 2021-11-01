@@ -121,9 +121,11 @@ export const IconImg = styled.img`
     cursor: pointer;
     opacity: 0.5;
     filter: grayscale(100%);
+    transition: 0.3s;
     &:hover {
         opacity: 1;
         filter: grayscale(0%);
+        transform: translate(0, -2px);
     }
 `;
 
@@ -156,5 +158,24 @@ export const HeroGambar = styled.img`
 
     @media (min-width: 320px) and (max-width: 480px) {
         height: 32px;
+    }
+`;
+
+export const ButtonResume = styled.a`
+    font-size: 12px;
+    color: #9e45c5;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 2px;
+    border: 1px solid #9e45c5;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+        background-color: #9e45c5;
+        transition: all 0.5s ease-in-out;
     }
 `;

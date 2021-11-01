@@ -67,7 +67,7 @@ export const ContentOne = styled.div`
     grid-area: col1;
 
     @media (min-width: 1140px) {
-        margin-bottom: 300px;
+        margin-bottom: 200px;
     }
 `;
 
