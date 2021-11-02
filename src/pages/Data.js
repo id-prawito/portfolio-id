@@ -34,7 +34,7 @@ export const heroObjTwo = {
     id: "hero",
     nama: "Hello, i’am Prawito.",
     deskripsiJob: "A frontend developer based in Indonesia.",
-    imgHero: require("../images/hero-img.jfif"),
+    imgHero: require("../images/praw-bg.jpeg"),
     penjelasan:
         "I like to design user interfaces and implement them into code as the appearance of a website or application so as to provide a product with a great user experience.",
 };
