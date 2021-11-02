@@ -1,5 +1,6 @@
 import React from "react";
 import AOS from "aos";
+import Helmet from "react-helmet";
 
 import {
     ButtonResume,
@@ -17,6 +18,9 @@ const NotFound = ({ id }) => {
     });
     return (
         <HeroContainer id={id}>
+            <Helmet>
+                <title>404 Not Found</title>
+            </Helmet>
             <HeroIsi>
                 <HeroText>
                     <TextH1
